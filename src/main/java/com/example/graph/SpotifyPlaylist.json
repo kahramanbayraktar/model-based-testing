@@ -1,0 +1,118 @@
+{
+    "models": [
+        {
+            "edges": [
+                {
+                    "id": "09446240-bb26-11eb-ba5a-2f8440b73484",
+                    "name": "e_StartBrowser",
+                    "sourceVertexId": "816e36c0-bb25-11eb-ba5a-2f8440b73484",
+                    "targetVertexId": "a9c55cc0-bb25-11eb-ba5a-2f8440b73484"
+                },
+                {
+                    "id": "3e9949f0-bb3b-11eb-97c3-7d6e76e0fdd4",
+                    "name": "e_OpenSpotify",
+                    "sourceVertexId": "a9c55cc0-bb25-11eb-ba5a-2f8440b73484",
+                    "targetVertexId": "1b4b5b00-bb3b-11eb-97c3-7d6e76e0fdd4"
+                },
+                {
+                    "id": "0611a170-bb3d-11eb-a204-c1dc0bb9e2b2",
+                    "name": "e_OpenLoginPage",
+                    "sourceVertexId": "1b4b5b00-bb3b-11eb-97c3-7d6e76e0fdd4",
+                    "targetVertexId": "f4ba1600-bb3c-11eb-a204-c1dc0bb9e2b2"
+                },
+                {
+                    "id": "f907a920-bb87-11eb-95cd-31ff3bdec183",
+                    "name": "e_LoginViaValidCredentials",
+                    "sourceVertexId": "f4ba1600-bb3c-11eb-a204-c1dc0bb9e2b2",
+                    "targetVertexId": "f4e99560-bb87-11eb-95cd-31ff3bdec183",
+                    "guard": "isUserLoggedIn == false;",
+                    "actions": [
+                        "isUserLoggedIn = true;"
+                    ]
+                },
+                {
+                    "id": "908da6d0-bc75-11eb-8389-5d0e915bd938",
+                    "name": "e_OpenPlaylist",
+                    "sourceVertexId": "f4e99560-bb87-11eb-95cd-31ff3bdec183",
+                    "targetVertexId": "7fbde900-bc75-11eb-8389-5d0e915bd938"
+                },
+                {
+                    "id": "b61dbd90-bc75-11eb-8389-5d0e915bd938",
+                    "name": "e_StartPlaylistRadio",
+                    "sourceVertexId": "7fbde900-bc75-11eb-8389-5d0e915bd938",
+                    "targetVertexId": "9d962370-bc75-11eb-8389-5d0e915bd938"
+                }
+            ],
+            "generator": "random(edge_coverage(100))",
+            "id": "7f168b20-bb25-11eb-ba5a-2f8440b73484",
+            "name": "SpotifyPlaylistModel",
+            "startElementId": "816e36c0-bb25-11eb-ba5a-2f8440b73484",
+            "vertices": [
+                {
+                    "id": "816e36c0-bb25-11eb-ba5a-2f8440b73484",
+                    "name": "Start",
+                    "properties": {
+                        "x": 654.9999999999999,
+                        "y": -287.4174323171919
+                    }
+                },
+                {
+                    "id": "a9c55cc0-bb25-11eb-ba5a-2f8440b73484",
+                    "name": "v_BrowserStarted",
+                    "properties": {
+                        "x": 1120.1251780546238,
+                        "y": -63.4249519977526
+                    }
+                },
+                {
+                    "id": "1b4b5b00-bb3b-11eb-97c3-7d6e76e0fdd4",
+                    "name": "v_SpotifyWebPlayerHomePageIsOpen",
+                    "properties": {
+                        "x": 1235.0016102095713,
+                        "y": 439.8815826661139
+                    }
+                },
+                {
+                    "id": "f4ba1600-bb3c-11eb-a204-c1dc0bb9e2b2",
+                    "name": "v_LoginPageIsOpen",
+                    "properties": {
+                        "x": 913.1250000000002,
+                        "y": 843.5020854902344
+                    }
+                },
+                {
+                    "id": "f4e99560-bb87-11eb-95cd-31ff3bdec183",
+                    "name": "v_UserLoggedIn",
+                    "properties": {
+                        "x": 396.8750000000001,
+                        "y": 843.5020854902345
+                    }
+                },
+                {
+                    "id": "7fbde900-bc75-11eb-8389-5d0e915bd938",
+                    "name": "v_PlaylistIsOpen",
+                    "properties": {
+                        "x": 74.99838979042875,
+                        "y": 439.88158266611424
+                    }
+                },
+                {
+                    "id": "9d962370-bc75-11eb-8389-5d0e915bd938",
+                    "name": "v_PlaylistRadioStarted",
+                    "properties": {
+                        "x": 189.8748219453759,
+                        "y": -63.42495199775237
+                    },
+                    "actions": [
+                        "returnedResults = true;"
+                    ]
+                }
+            ],
+            "actions": [
+                "isUserLoggedIn = false;"
+            ]
+        }
+    ],
+    "selectedModelIndex": 0,
+    "selectedElementId": "ade3d340-bc65-11eb-8389-5d0e915bd938"
+}

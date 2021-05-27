@@ -1,0 +1,103 @@
+{
+    "models": [
+        {
+            "edges": [
+                {
+                    "id": "09446240-bb26-11eb-ba5a-2f8440b73484",
+                    "name": "e_StartBrowser",
+                    "sourceVertexId": "816e36c0-bb25-11eb-ba5a-2f8440b73484",
+                    "targetVertexId": "a9c55cc0-bb25-11eb-ba5a-2f8440b73484"
+                },
+                {
+                    "id": "3e9949f0-bb3b-11eb-97c3-7d6e76e0fdd4",
+                    "name": "e_OpenSpotify",
+                    "sourceVertexId": "a9c55cc0-bb25-11eb-ba5a-2f8440b73484",
+                    "targetVertexId": "1b4b5b00-bb3b-11eb-97c3-7d6e76e0fdd4"
+                },
+                {
+                    "id": "0611a170-bb3d-11eb-a204-c1dc0bb9e2b2",
+                    "name": "e_OpenLoginPage",
+                    "sourceVertexId": "1b4b5b00-bb3b-11eb-97c3-7d6e76e0fdd4",
+                    "targetVertexId": "f4ba1600-bb3c-11eb-a204-c1dc0bb9e2b2"
+                },
+                {
+                    "id": "9f4b2410-beb2-11eb-9ca9-01f1a30b90cc",
+                    "name": "e_LoginAttemptViaInvalidCredentials",
+                    "sourceVertexId": "f4ba1600-bb3c-11eb-a204-c1dc0bb9e2b2",
+                    "targetVertexId": "83a50be0-beb2-11eb-9ca9-01f1a30b90cc"
+                },
+                {
+                    "id": "81025d70-bec6-11eb-bcdb-8fb0ffecbfe7",
+                    "name": "e_LoginViaValidCredentials",
+                    "sourceVertexId": "83a50be0-beb2-11eb-9ca9-01f1a30b90cc",
+                    "targetVertexId": "f4e99560-bb87-11eb-95cd-31ff3bdec183"
+                },
+                {
+                    "id": "36659b50-bec7-11eb-bcdb-8fb0ffecbfe7",
+                    "name": "e_LogOut",
+                    "sourceVertexId": "f4e99560-bb87-11eb-95cd-31ff3bdec183",
+                    "targetVertexId": "1b4b5b00-bb3b-11eb-97c3-7d6e76e0fdd4"
+                }
+            ],
+            "generator": "random(edge_coverage(100))",
+            "id": "7f168b20-bb25-11eb-ba5a-2f8440b73484",
+            "name": "SpotifyLoginModel",
+            "startElementId": "816e36c0-bb25-11eb-ba5a-2f8440b73484",
+            "vertices": [
+                {
+                    "id": "816e36c0-bb25-11eb-ba5a-2f8440b73484",
+                    "name": "Start",
+                    "properties": {
+                        "x": 454.4999999999999,
+                        "y": -208.75
+                    }
+                },
+                {
+                    "id": "a9c55cc0-bb25-11eb-ba5a-2f8440b73484",
+                    "name": "v_BrowserStarted",
+                    "properties": {
+                        "x": 901.5856147037166,
+                        "y": 49.37500000000017
+                    }
+                },
+                {
+                    "id": "1b4b5b00-bb3b-11eb-97c3-7d6e76e0fdd4",
+                    "name": "v_SpotifyWebPlayerHomePageIsOpen",
+                    "properties": {
+                        "x": 901.5856147037164,
+                        "y": 565.625
+                    }
+                },
+                {
+                    "id": "f4ba1600-bb3c-11eb-a204-c1dc0bb9e2b2",
+                    "name": "v_LoginPageIsOpen",
+                    "properties": {
+                        "x": 454.50000000000017,
+                        "y": 823.75
+                    }
+                },
+                {
+                    "id": "f4e99560-bb87-11eb-95cd-31ff3bdec183",
+                    "name": "v_UserLoggedIn",
+                    "properties": {
+                        "x": 7.414385296283456,
+                        "y": 565.6249999999999
+                    }
+                },
+                {
+                    "id": "83a50be0-beb2-11eb-9ca9-01f1a30b90cc",
+                    "name": "v_InvalidCredentialsMessageReturned",
+                    "properties": {
+                        "x": 7.41438529628374,
+                        "y": 49.37499999999966
+                    }
+                }
+            ],
+            "actions": [
+                ""
+            ]
+        }
+    ],
+    "selectedModelIndex": 0,
+    "selectedElementId": "36659b50-bec7-11eb-bcdb-8fb0ffecbfe7"
+}

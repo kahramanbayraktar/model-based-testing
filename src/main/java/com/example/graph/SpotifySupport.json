@@ -1,0 +1,112 @@
+{
+    "models": [
+        {
+            "edges": [
+                {
+                    "id": "09446240-bb26-11eb-ba5a-2f8440b73484",
+                    "name": "e_StartBrowser",
+                    "sourceVertexId": "816e36c0-bb25-11eb-ba5a-2f8440b73484",
+                    "targetVertexId": "a9c55cc0-bb25-11eb-ba5a-2f8440b73484"
+                },
+                {
+                    "id": "3e9949f0-bb3b-11eb-97c3-7d6e76e0fdd4",
+                    "name": "e_OpenSpotify",
+                    "sourceVertexId": "a9c55cc0-bb25-11eb-ba5a-2f8440b73484",
+                    "targetVertexId": "1b4b5b00-bb3b-11eb-97c3-7d6e76e0fdd4"
+                },
+                {
+                    "id": "b61dbd90-bc75-11eb-8389-5d0e915bd938",
+                    "name": "e_DoSupportSearchWithResults",
+                    "sourceVertexId": "7fbde900-bc75-11eb-8389-5d0e915bd938",
+                    "targetVertexId": "9d962370-bc75-11eb-8389-5d0e915bd938"
+                },
+                {
+                    "id": "d22ce220-be75-11eb-bf5a-5b6c004173e2",
+                    "name": "e_OpenSupportPage",
+                    "sourceVertexId": "1b4b5b00-bb3b-11eb-97c3-7d6e76e0fdd4",
+                    "targetVertexId": "7fbde900-bc75-11eb-8389-5d0e915bd938"
+                },
+                {
+                    "id": "f5390d20-be75-11eb-bf5a-5b6c004173e2",
+                    "name": "e_DoSupportSearchWithoutResults",
+                    "sourceVertexId": "7fbde900-bc75-11eb-8389-5d0e915bd938",
+                    "targetVertexId": "e95c3f40-be75-11eb-bf5a-5b6c004173e2"
+                },
+                {
+                    "id": "91859040-be76-11eb-bf5a-5b6c004173e2",
+                    "name": "e_ClearSearch",
+                    "sourceVertexId": "e95c3f40-be75-11eb-bf5a-5b6c004173e2",
+                    "targetVertexId": "7fbde900-bc75-11eb-8389-5d0e915bd938"
+                },
+                {
+                    "id": "a28b7940-be76-11eb-bf5a-5b6c004173e2",
+                    "name": "e_ClearSearch",
+                    "sourceVertexId": "9d962370-bc75-11eb-8389-5d0e915bd938",
+                    "targetVertexId": "7fbde900-bc75-11eb-8389-5d0e915bd938"
+                }
+            ],
+            "generator": "random(edge_coverage(100))",
+            "id": "7f168b20-bb25-11eb-ba5a-2f8440b73484",
+            "name": "SpotifySupportModel",
+            "startElementId": "816e36c0-bb25-11eb-ba5a-2f8440b73484",
+            "vertices": [
+                {
+                    "id": "816e36c0-bb25-11eb-ba5a-2f8440b73484",
+                    "name": "Start",
+                    "properties": {
+                        "x": 454.49999999999994,
+                        "y": -98.49999999999994
+                    }
+                },
+                {
+                    "id": "a9c55cc0-bb25-11eb-ba5a-2f8440b73484",
+                    "name": "v_BrowserStarted",
+                    "properties": {
+                        "x": 806.1063139364821,
+                        "y": 104.50000000000017
+                    }
+                },
+                {
+                    "id": "1b4b5b00-bb3b-11eb-97c3-7d6e76e0fdd4",
+                    "name": "v_SpotifyHomePageIsOpen",
+                    "properties": {
+                        "x": 806.106313936482,
+                        "y": 510.5
+                    }
+                },
+                {
+                    "id": "7fbde900-bc75-11eb-8389-5d0e915bd938",
+                    "name": "v_SupportPageIsOpen",
+                    "properties": {
+                        "x": 454.5000000000001,
+                        "y": 713.5
+                    }
+                },
+                {
+                    "id": "9d962370-bc75-11eb-8389-5d0e915bd938",
+                    "name": "v_SearchResultsReturned",
+                    "properties": {
+                        "x": 102.89368606351786,
+                        "y": 510.4999999999999
+                    },
+                    "actions": [
+                        ""
+                    ]
+                },
+                {
+                    "id": "e95c3f40-be75-11eb-bf5a-5b6c004173e2",
+                    "name": "v_SearchResultsNotReturned",
+                    "properties": {
+                        "x": 102.89368606351809,
+                        "y": 104.49999999999974
+                    }
+                }
+            ],
+            "actions": [
+                ""
+            ]
+        }
+    ],
+    "selectedModelIndex": 0,
+    "selectedElementId": "7fbde900-bc75-11eb-8389-5d0e915bd938"
+}

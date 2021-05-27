@@ -1,0 +1,143 @@
+{
+    "models": [
+        {
+            "edges": [
+                {
+                    "id": "09446240-bb26-11eb-ba5a-2f8440b73484",
+                    "name": "e_StartBrowser",
+                    "sourceVertexId": "816e36c0-bb25-11eb-ba5a-2f8440b73484",
+                    "targetVertexId": "a9c55cc0-bb25-11eb-ba5a-2f8440b73484"
+                },
+                {
+                    "id": "3e9949f0-bb3b-11eb-97c3-7d6e76e0fdd4",
+                    "name": "e_OpenSpotify",
+                    "sourceVertexId": "a9c55cc0-bb25-11eb-ba5a-2f8440b73484",
+                    "targetVertexId": "1b4b5b00-bb3b-11eb-97c3-7d6e76e0fdd4"
+                },
+                {
+                    "id": "0611a170-bb3d-11eb-a204-c1dc0bb9e2b2",
+                    "name": "e_OpenLoginPage",
+                    "sourceVertexId": "1b4b5b00-bb3b-11eb-97c3-7d6e76e0fdd4",
+                    "targetVertexId": "f4ba1600-bb3c-11eb-a204-c1dc0bb9e2b2"
+                },
+                {
+                    "id": "f907a920-bb87-11eb-95cd-31ff3bdec183",
+                    "name": "e_LoginViaValidCredentials",
+                    "sourceVertexId": "f4ba1600-bb3c-11eb-a204-c1dc0bb9e2b2",
+                    "targetVertexId": "f4e99560-bb87-11eb-95cd-31ff3bdec183",
+                    "actions": [
+                        "isUserLoggedIn = true;"
+                    ]
+                },
+                {
+                    "id": "908da6d0-bc75-11eb-8389-5d0e915bd938",
+                    "name": "e_OpenSearchPage",
+                    "sourceVertexId": "f4e99560-bb87-11eb-95cd-31ff3bdec183",
+                    "targetVertexId": "7fbde900-bc75-11eb-8389-5d0e915bd938"
+                },
+                {
+                    "id": "b61dbd90-bc75-11eb-8389-5d0e915bd938",
+                    "name": "e_DoSearchWithResults",
+                    "sourceVertexId": "7fbde900-bc75-11eb-8389-5d0e915bd938",
+                    "targetVertexId": "9d962370-bc75-11eb-8389-5d0e915bd938"
+                },
+                {
+                    "id": "f578b090-bea9-11eb-a2c2-c9f7631b8d44",
+                    "name": "e_ClearSearch",
+                    "sourceVertexId": "9d962370-bc75-11eb-8389-5d0e915bd938",
+                    "targetVertexId": "7fbde900-bc75-11eb-8389-5d0e915bd938"
+                },
+                {
+                    "id": "1cac8c40-beaa-11eb-a2c2-c9f7631b8d44",
+                    "name": "e_DoSearchWithoutResults",
+                    "sourceVertexId": "7fbde900-bc75-11eb-8389-5d0e915bd938",
+                    "targetVertexId": "05a836c0-beaa-11eb-a2c2-c9f7631b8d44"
+                },
+                {
+                    "id": "3ad69030-beaa-11eb-a2c2-c9f7631b8d44",
+                    "name": "e_ClearSearch",
+                    "sourceVertexId": "05a836c0-beaa-11eb-a2c2-c9f7631b8d44",
+                    "targetVertexId": "7fbde900-bc75-11eb-8389-5d0e915bd938"
+                }
+            ],
+            "generator": "random(edge_coverage(100))",
+            "id": "7f168b20-bb25-11eb-ba5a-2f8440b73484",
+            "name": "SpotifySearchModel",
+            "startElementId": "816e36c0-bb25-11eb-ba5a-2f8440b73484",
+            "vertices": [
+                {
+                    "id": "816e36c0-bb25-11eb-ba5a-2f8440b73484",
+                    "name": "Start",
+                    "properties": {
+                        "x": 454.4999999999999,
+                        "y": -367.0131306174294
+                    }
+                },
+                {
+                    "id": "a9c55cc0-bb25-11eb-ba5a-2f8440b73484",
+                    "name": "v_BrowserStarted",
+                    "properties": {
+                        "x": 931.4528086589517,
+                        "y": -169.45280865895188
+                    }
+                },
+                {
+                    "id": "1b4b5b00-bb3b-11eb-97c3-7d6e76e0fdd4",
+                    "name": "v_SpotifyWebPlayerHomePageIsOpen",
+                    "properties": {
+                        "x": 1129.0131306174294,
+                        "y": 307.49999999999983
+                    }
+                },
+                {
+                    "id": "f4ba1600-bb3c-11eb-a204-c1dc0bb9e2b2",
+                    "name": "v_LoginPageIsOpen",
+                    "properties": {
+                        "x": 931.4528086589519,
+                        "y": 784.4528086589517
+                    }
+                },
+                {
+                    "id": "f4e99560-bb87-11eb-95cd-31ff3bdec183",
+                    "name": "v_UserLoggedIn",
+                    "properties": {
+                        "x": 454.5000000000002,
+                        "y": 982.0131306174294
+                    }
+                },
+                {
+                    "id": "7fbde900-bc75-11eb-8389-5d0e915bd938",
+                    "name": "v_SearchPageIsOpen",
+                    "properties": {
+                        "x": -22.452808658951255,
+                        "y": 784.4528086589523
+                    }
+                },
+                {
+                    "id": "9d962370-bc75-11eb-8389-5d0e915bd938",
+                    "name": "v_SearchResultsReturned",
+                    "properties": {
+                        "x": -220.0131306174294,
+                        "y": 307.5000000000002
+                    },
+                    "actions": [
+                        "returnedResults = true;"
+                    ]
+                },
+                {
+                    "id": "05a836c0-beaa-11eb-a2c2-c9f7631b8d44",
+                    "name": "v_SearchResultsNotReturned",
+                    "properties": {
+                        "x": -22.45280865895154,
+                        "y": -169.45280865895205
+                    }
+                }
+            ],
+            "actions": [
+                ""
+            ]
+        }
+    ],
+    "selectedModelIndex": 0,
+    "selectedElementId": "7fbde900-bc75-11eb-8389-5d0e915bd938"
+}
